@@ -1,0 +1,84 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(27, 27, 27, 0.541);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 10;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overlay .wrapper {
+  max-width: 470px;
+  width: 100%;
+  height: 600px;
+}
+
+.overlay .wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.overlay .wrapper .wrapper-img {
+  width: 100%;
+  height: 420px;
+  overflow-y: hidden;
+}
+
+.overlay .wrapper .wrapper-img::-webkit-scrollbar {
+  display: none;
+}
+
+.overlay .wrapper .wrapper-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.overlay .wrapper .content-title {
+  width: 100%;
+  background: white;
+  text-align: start;
+}
+
+.overlay .wrapper .content-title .content__title--info {
+  text-align: start;
+  padding: 30px;
+}
+
+.overlay .wrapper .content-title .content__title--info .task {
+  font-size: 23px;
+}
+
+.overlay .wrapper .content-title .content__title--info .title {
+  margin: 15px 0px;
+}
+
+.overlay .wrapper .content-title .content__title--info .btn {
+  text-decoration: none;
+  padding: 7px 10px;
+  background-color: #a091f9;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.overlay .close {
+  position: absolute;
+  top: 3%;
+  right: 6%;
+  cursor: pointer;
+  font-size: 32px;
+}
+/*# sourceMappingURL=OpenModal.css.map */

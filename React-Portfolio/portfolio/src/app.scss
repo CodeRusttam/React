@@ -1,0 +1,16 @@
+.App{
+    height: 100%;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    .section{
+        width: 100%;
+        position: relative;
+    }
+}
+html{
+    scroll-behavior: smooth;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}

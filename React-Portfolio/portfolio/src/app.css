@@ -1,0 +1,21 @@
+.App {
+  height: 100%;
+}
+
+.App::-webkit-scrollbar {
+  display: none;
+}
+
+.App .section {
+  width: 100%;
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+/*# sourceMappingURL=app.css.map */

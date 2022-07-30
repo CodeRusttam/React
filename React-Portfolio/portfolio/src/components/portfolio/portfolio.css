@@ -1,0 +1,94 @@
+.portfolio {
+  background-color: rgba(10, 101, 100, 0.4);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 50px 0px;
+}
+
+.portfolio::-webkit-scrollbar {
+  display: none;
+}
+
+.portfolio h1 {
+  font-size: 50px;
+}
+
+.portfolio ul {
+  margin: 10px;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio .container {
+  width: 80%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 300px 300px;
+      grid-template-rows: 300px 300px;
+  gap: 20px;
+}
+
+.portfolio .container::-webkit-scrollbar {
+  display: none;
+}
+
+.portfolio .container .item {
+  position: relative;
+  border-radius: 20px;
+  border: 1px solid #f0efef;
+  color: white;
+  overflow: hidden;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+.portfolio .container .item::-webkit-scrollbar {
+  display: none;
+}
+
+.portfolio .container .item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 0.6;
+}
+
+.portfolio .container .item::-webkit-scrollbar {
+  display: none;
+}
+
+.portfolio .container .item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.portfolio .container .item:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.portfolio .container .item:hover .overlay {
+  opacity: 0.2;
+}
+/*# sourceMappingURL=portfolio.css.map */
